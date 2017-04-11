@@ -22,5 +22,10 @@ def get_rating(filename):
     for pair in new_sorted_list:
         print "{} is rated at {}".format(pair[0], pair[1])
 
+ new_rest = raw_input("Hey there! Please enter a new restaurant: ")
+        new_rating = raw_input("Hey there! Please enter a new rating: ")
+
+        sorted_with_newrest = new_sorted_list.append((new_rest,new_rating))
+       
 
 get_rating("scores.txt")
